@@ -6,13 +6,6 @@ import { lusitana } from '@/app/ui/fonts';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { Suspense } from 'react';
 import { fetchInvoicesPages } from '@/app/lib/data';
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Invoices | Acme Dashboard',
-  description: 'All your invoices in one place.',
-  metadataBase: new URL('https://next-js-test-wheat.vercel.app'),
-};
  
 export default async function Page({searchParams}: {searchParams?: {query?: string, page?: string}}) 
 {
